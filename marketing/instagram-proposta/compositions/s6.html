@@ -1,0 +1,47 @@
+<template>
+  <style>
+    @font-face { font-family: "Geist"; src: url("assets/fonts/geist-latin.woff2") format("woff2"); font-weight: 100 900; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2190-2199, U+2212; }
+    @font-face { font-family: "Geist"; src: url("assets/fonts/geist-latin-ext.woff2") format("woff2"); font-weight: 100 900; unicode-range: U+0100-024F, U+1E00-1EFF, U+2C60-2C7F, U+A720-A7FF; }
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Geist", sans-serif; color: #0b0f19;
+      background-color: #f3f5fa;
+      background-image: linear-gradient(#e3e8f2 1px, transparent 1px), linear-gradient(90deg, #e3e8f2 1px, transparent 1px);
+      background-size: 48px 48px; background-position: 12px 12px; }
+    .hl { position: absolute; left: 72px; top: 222px; width: 936px; font-weight: 700; font-size: 104px; line-height: 1.0; letter-spacing: -0.025em; }
+    .hl .ln { display: block; }
+    .hl em { font-style: normal; color: #155dfc; }
+    .win { position: absolute; left: 60px; top: 470px; width: 960px; height: 700px; border-radius: 36px; background: #fff;
+      border: 1px solid #e4e7ec; box-shadow: 0 24px 60px rgba(17, 24, 39, 0.10); overflow: hidden; }
+    .cam { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+    .cam img { position: absolute; left: 0; top: 0; display: block; }
+    .ring { position: absolute; border: 6px solid #155dfc; border-radius: 18px; opacity: 0; }
+
+    #s6-bg { position: absolute; inset: 0; background: #155dfc; }
+    #s6-mark { position: absolute; left: 430px; top: 520px; width: 220px; height: 220px; border-radius: 48px; background: #fff; transform-origin: 0 0; }
+    #s6-icon { position: absolute; left: 430px; top: 520px; width: 220px; height: 220px; padding: 34px; opacity: 0; }
+    #s6-word { position: absolute; left: 0; top: 800px; width: 1080px; text-align: center; font-weight: 700; font-size: 132px; letter-spacing: -0.035em; color: #fff; }
+    #s6-word span { color: #bfd3ff; }
+    #s6-tag { position: absolute; left: 0; top: 968px; width: 1080px; text-align: center; font-weight: 500; font-size: 52px; color: #dbe6ff; }
+    #s6-cta { position: absolute; left: 0; top: 1130px; width: 1080px; text-align: center; font-weight: 700; font-size: 68px; color: #fff; }
+    #s6-line { position: absolute; left: 290px; top: 1222px; width: 500px; height: 6px; background: #fff; border-radius: 3px; transform-origin: 0 50%; }
+  </style>
+  <div id="root" data-composition-id="s6" data-width="1080" data-height="1920">
+    <div id="s6-bg" class="clip" data-start="0" data-duration="5.55"></div>
+    <div id="s6-mark" class="clip" data-start="0" data-duration="5.55"></div>
+    <div id="s6-icon" class="clip" data-start="0" data-duration="5.55"><svg viewBox="0 0 24 24" fill="none" stroke="#155dfc" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></svg></div>
+    <h2 id="s6-word" class="clip" data-start="0" data-duration="5.55">einfo<span>.tech</span></h2>
+    <p id="s6-tag" class="clip" data-start="0" data-duration="5.55">Sua loja de hardware online</p>
+    <p id="s6-cta" class="clip" data-start="0" data-duration="5.55">Chama no direct →</p>
+    <div id="s6-line" class="clip" data-start="0" data-duration="5.55"></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s6-bg", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.out" }, 0);
+    tl.fromTo("#s6-mark", { x: -370, y: -50, scaleX: 960 / 220, scaleY: 700 / 220 }, { x: 0, y: 0, scaleX: 1, scaleY: 1, duration: 0.6, ease: "power3.inOut" }, 0);
+    tl.fromTo("#s6-icon", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)" }, 0.5);
+    tl.fromTo("#s6-word", { clipPath: "inset(0 100% 0 0)" }, { clipPath: "inset(0 0% 0 0)", duration: 0.55, ease: "power3.out" }, 0.1);
+    tl.fromTo("#s6-tag", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.4, ease: "expo.out" }, 0.85);
+    tl.fromTo("#s6-cta", { clipPath: "inset(100% 0 0 0)" }, { clipPath: "inset(0% 0 0 0)", duration: 0.35, ease: "expo.out" }, 1.49);
+    tl.fromTo("#s6-line", { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "power3.out" }, 1.75);
+    window.__timelines["s6"] = tl;
+  </script>
+</template>

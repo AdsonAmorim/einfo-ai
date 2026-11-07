@@ -1,0 +1,78 @@
+<template>
+  <style>
+    @font-face { font-family: "Geist"; src: url("assets/fonts/geist-latin.woff2") format("woff2"); font-weight: 100 900; }
+    #root { position: absolute; inset: 0; font-family: "Geist", sans-serif; }
+    .cap { position: absolute; left: 0; top: 1206px; width: 1080px; text-align: center; overflow: visible; }
+    .cap span { display: inline-block; font-weight: 600; font-size: 58px; letter-spacing: -0.01em; color: #0b0f19; }
+  </style>
+  <div id="root" data-composition-id="captions" data-width="1080" data-height="1920">
+    <div id="cap-0" class="cap clip" data-start="0.37" data-duration="1.07"><span>Seu cliente colocou</span></div>
+    <div id="cap-1" class="cap clip" data-start="1.44" data-duration="1.12"><span>duas placas de vídeo</span></div>
+    <div id="cap-2" class="cap clip" data-start="2.56" data-duration="0.88"><span>no carrinho.</span></div>
+    <div id="cap-3" class="cap clip" data-start="3.44" data-duration="1.2"><span>Só que no estoque</span></div>
+    <div id="cap-4" class="cap clip" data-start="4.64" data-duration="0.92"><span>sobrou uma.</span></div>
+    <div id="cap-5" class="cap clip" data-start="5.56" data-duration="0.98"><span>Na einfo.tech,</span></div>
+    <div id="cap-6" class="cap clip" data-start="6.54" data-duration="1.45"><span>você ajusta o estoque</span></div>
+    <div id="cap-7" class="cap clip" data-start="7.99" data-duration="0.71"><span>no painel</span></div>
+    <div id="cap-8" class="cap clip" data-start="8.7" data-duration="0.76"><span>e o carrinho dele</span></div>
+    <div id="cap-9" class="cap clip" data-start="9.46" data-duration="1.4"><span>se corrige sozinho,</span></div>
+    <div id="cap-10" class="cap clip" data-start="10.86" data-duration="1.6"><span>antes de fechar a compra.</span></div>
+    <div id="cap-11" class="cap clip" data-start="12.46" data-duration="1.64"><span>Vitrine com categorias,</span></div>
+    <div id="cap-12" class="cap clip" data-start="14.1" data-duration="1.62"><span>busca e estoque à vista.</span></div>
+    <div id="cap-13" class="cap clip" data-start="15.72" data-duration="1.0"><span>Uma loja de hardware</span></div>
+    <div id="cap-14" class="cap clip" data-start="16.72" data-duration="0.82"><span>que não promete</span></div>
+    <div id="cap-15" class="cap clip" data-start="17.54" data-duration="1.03"><span>o que não tem.</span></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#cap-0 span", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.14, ease: "power2.out" }, 0.37);
+    tl.to("#cap-0 span", { opacity: 0, duration: 0.08, ease: "power2.in" }, 1.36);
+    tl.set("#cap-0 span", { opacity: 0 }, 1.44);
+    tl.fromTo("#cap-1 span", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.14, ease: "power2.out" }, 1.44);
+    tl.to("#cap-1 span", { opacity: 0, duration: 0.08, ease: "power2.in" }, 2.48);
+    tl.set("#cap-1 span", { opacity: 0 }, 2.56);
+    tl.fromTo("#cap-2 span", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.14, ease: "power2.out" }, 2.56);
+    tl.to("#cap-2 span", { opacity: 0, duration: 0.08, ease: "power2.in" }, 3.36);
+    tl.set("#cap-2 span", { opacity: 0 }, 3.44);
+    tl.fromTo("#cap-3 span", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.14, ease: "power2.out" }, 3.44);
+    tl.to("#cap-3 span", { opacity: 0, duration: 0.08, ease: "power2.in" }, 4.56);
+    tl.set("#cap-3 span", { opacity: 0 }, 4.64);
+    tl.fromTo("#cap-4 span", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.14, ease: "power2.out" }, 4.64);
+    tl.to("#cap-4 span", { opacity: 0, duration: 0.08, ease: "power2.in" }, 5.48);
+    tl.set("#cap-4 span", { opacity: 0 }, 5.56);
+    tl.fromTo("#cap-5 span", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.14, ease: "power2.out" }, 5.56);
+    tl.to("#cap-5 span", { opacity: 0, duration: 0.08, ease: "power2.in" }, 6.46);
+    tl.set("#cap-5 span", { opacity: 0 }, 6.54);
+    tl.fromTo("#cap-6 span", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.14, ease: "power2.out" }, 6.54);
+    tl.to("#cap-6 span", { opacity: 0, duration: 0.08, ease: "power2.in" }, 7.91);
+    tl.set("#cap-6 span", { opacity: 0 }, 7.99);
+    tl.fromTo("#cap-7 span", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.14, ease: "power2.out" }, 7.99);
+    tl.to("#cap-7 span", { opacity: 0, duration: 0.08, ease: "power2.in" }, 8.62);
+    tl.set("#cap-7 span", { opacity: 0 }, 8.7);
+    tl.fromTo("#cap-8 span", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.14, ease: "power2.out" }, 8.7);
+    tl.to("#cap-8 span", { opacity: 0, duration: 0.08, ease: "power2.in" }, 9.38);
+    tl.set("#cap-8 span", { opacity: 0 }, 9.46);
+    tl.fromTo("#cap-9 span", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.14, ease: "power2.out" }, 9.46);
+    tl.to("#cap-9 span", { opacity: 0, duration: 0.08, ease: "power2.in" }, 10.78);
+    tl.set("#cap-9 span", { opacity: 0 }, 10.86);
+    tl.fromTo("#cap-10 span", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.14, ease: "power2.out" }, 10.86);
+    tl.to("#cap-10 span", { opacity: 0, duration: 0.08, ease: "power2.in" }, 12.38);
+    tl.set("#cap-10 span", { opacity: 0 }, 12.46);
+    tl.fromTo("#cap-11 span", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.14, ease: "power2.out" }, 12.46);
+    tl.to("#cap-11 span", { opacity: 0, duration: 0.08, ease: "power2.in" }, 14.02);
+    tl.set("#cap-11 span", { opacity: 0 }, 14.1);
+    tl.fromTo("#cap-12 span", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.14, ease: "power2.out" }, 14.1);
+    tl.to("#cap-12 span", { opacity: 0, duration: 0.08, ease: "power2.in" }, 15.64);
+    tl.set("#cap-12 span", { opacity: 0 }, 15.72);
+    tl.fromTo("#cap-13 span", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.14, ease: "power2.out" }, 15.72);
+    tl.to("#cap-13 span", { opacity: 0, duration: 0.08, ease: "power2.in" }, 16.64);
+    tl.set("#cap-13 span", { opacity: 0 }, 16.72);
+    tl.fromTo("#cap-14 span", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.14, ease: "power2.out" }, 16.72);
+    tl.to("#cap-14 span", { opacity: 0, duration: 0.08, ease: "power2.in" }, 17.46);
+    tl.set("#cap-14 span", { opacity: 0 }, 17.54);
+    tl.fromTo("#cap-15 span", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.14, ease: "power2.out" }, 17.54);
+    tl.to("#cap-15 span", { opacity: 0, duration: 0.08, ease: "power2.in" }, 18.49);
+    tl.set("#cap-15 span", { opacity: 0 }, 18.57);
+    window.__timelines["captions"] = tl;
+  </script>
+</template>

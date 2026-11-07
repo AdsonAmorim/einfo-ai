@@ -1,0 +1,44 @@
+<template>
+  <style>
+    @font-face { font-family: "Geist"; src: url("assets/fonts/geist-latin.woff2") format("woff2"); font-weight: 100 900; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2190-2199, U+2212; }
+    @font-face { font-family: "Geist"; src: url("assets/fonts/geist-latin-ext.woff2") format("woff2"); font-weight: 100 900; unicode-range: U+0100-024F, U+1E00-1EFF, U+2C60-2C7F, U+A720-A7FF; }
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Geist", sans-serif; color: #0b0f19;
+      background-color: #f3f5fa;
+      background-image: linear-gradient(#e3e8f2 1px, transparent 1px), linear-gradient(90deg, #e3e8f2 1px, transparent 1px);
+      background-size: 48px 48px; background-position: 12px 12px; }
+    .hl { position: absolute; left: 72px; top: 222px; width: 936px; font-weight: 700; font-size: 104px; line-height: 1.0; letter-spacing: -0.025em; }
+    .hl .ln { display: block; }
+    .hl em { font-style: normal; color: #155dfc; }
+    .win { position: absolute; left: 60px; top: 470px; width: 960px; height: 700px; border-radius: 36px; background: #fff;
+      border: 1px solid #e4e7ec; box-shadow: 0 24px 60px rgba(17, 24, 39, 0.10); overflow: hidden; }
+    .cam { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+    .cam img { position: absolute; left: 0; top: 0; display: block; }
+    .ring { position: absolute; border: 6px solid #155dfc; border-radius: 18px; opacity: 0; }
+
+  </style>
+  <div id="root" data-composition-id="s4" data-width="1080" data-height="1920">
+    <h2 id="s4-hl" class="hl clip" data-start="0" data-duration="3.25"><span class="ln"><em>6</em> categorias</span><span class="ln"><em>20</em> produtos</span></h2>
+    <div id="s4-win" class="win clip" data-start="0" data-duration="3.25">
+      <div id="s4-cam" class="cam" data-layout-allow-overflow style="width:1080px;height:2340px">
+        <img id="s4-img-a" src="assets/screens/catalog-top.png" width="1080" height="2340" alt="Vitrine com categorias" />
+        <img id="s4-img-b" src="assets/screens/catalog-search.png" width="1080" height="2340" alt="Busca por rtx" style="opacity:0" />
+        <div id="s4-ring-cat" class="ring" style="left:31px;top:663px;width:862px;height:313px"></div>
+        <div id="s4-ring-search" class="ring" style="left:31px;top:543px;width:827px;height:99px"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s4-win", { x: 140, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 0);
+    tl.fromTo("#s4-hl .ln", { clipPath: "inset(100% 0 0 0)", y: 30 }, { clipPath: "inset(0% 0 0 0)", y: 0, duration: 0.35, ease: "expo.out", stagger: 0.08 }, 0.04);
+tl.fromTo("#s4-cam", {"x": 15.6, "y": -303.6, "scale": 0.86}, { ...{"x": 10.0, "y": -430.0, "scale": 1.0}, duration: 1.2, ease: "power3.inOut" }, 0.3);
+tl.fromTo("#s4-ring-cat", { opacity: 0, scale: 1.25 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2)" }, 0.79);
+tl.set("#s4-img-b", { opacity: 1 }, 1.65);
+tl.set("#s4-ring-cat", { opacity: 0 }, 1.65);
+tl.fromTo("#s4-ring-search", { opacity: 0, scale: 1.25 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2)" }, 1.72);
+
+    tl.to("#s4-win", { x: -120, opacity: 0, duration: 0.22, ease: "power2.in" }, 3.03);
+tl.to("#s4-hl", { opacity: 0, duration: 0.18, ease: "power2.in" }, 3.05);
+    window.__timelines["s4"] = tl;
+  </script>
+</template>

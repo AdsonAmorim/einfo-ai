@@ -1,0 +1,46 @@
+<template>
+  <style>
+    @font-face { font-family: "Geist"; src: url("assets/fonts/geist-latin.woff2") format("woff2"); font-weight: 100 900; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2190-2199, U+2212; }
+    @font-face { font-family: "Geist"; src: url("assets/fonts/geist-latin-ext.woff2") format("woff2"); font-weight: 100 900; unicode-range: U+0100-024F, U+1E00-1EFF, U+2C60-2C7F, U+A720-A7FF; }
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Geist", sans-serif; color: #0b0f19;
+      background-color: #f3f5fa;
+      background-image: linear-gradient(#e3e8f2 1px, transparent 1px), linear-gradient(90deg, #e3e8f2 1px, transparent 1px);
+      background-size: 48px 48px; background-position: 12px 12px; }
+    .hl { position: absolute; left: 72px; top: 222px; width: 936px; font-weight: 700; font-size: 104px; line-height: 1.0; letter-spacing: -0.025em; }
+    .hl .ln { display: block; }
+    .hl em { font-style: normal; color: #155dfc; }
+    .win { position: absolute; left: 60px; top: 470px; width: 960px; height: 700px; border-radius: 36px; background: #fff;
+      border: 1px solid #e4e7ec; box-shadow: 0 24px 60px rgba(17, 24, 39, 0.10); overflow: hidden; }
+    .cam { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+    .cam img { position: absolute; left: 0; top: 0; display: block; }
+    .ring { position: absolute; border: 6px solid #155dfc; border-radius: 18px; opacity: 0; }
+
+  </style>
+  <div id="root" data-composition-id="s2" data-width="1080" data-height="1920">
+    <h2 id="s2-hl" class="hl clip" data-start="0" data-duration="5.4"><span class="ln"><em>1</em> no estoque</span></h2>
+    <div id="s2-win" class="win clip" data-start="0" data-duration="5.4">
+      <div id="s2-cam" class="cam" data-layout-allow-overflow style="width:2560px;height:1720px">
+        <img id="s2-img-a" src="assets/screens/admin-edit.png" width="2560" height="1720" alt="Admin: estoque 6" />
+        <img id="s2-img-b" src="assets/screens/admin-edit-stock1.png" width="2560" height="1720" alt="Admin: estoque 1" style="opacity:0" />
+        <div id="s2-ring-stock" class="ring" style="left:1036px;top:982px;width:488px;height:94px"></div>
+        <div id="s2-ring-save" class="ring" style="left:533px;top:1330px;width:293px;height:88px"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s2-win", { x: 140, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 0);
+    tl.fromTo("#s2-hl .ln", { clipPath: "inset(100% 0 0 0)", y: 30 }, { clipPath: "inset(0% 0 0 0)", y: 0, duration: 0.35, ease: "expo.out", stagger: 0.08 }, 0.04);
+tl.fromTo("#s2-cam", {"x": 6.4, "y": 17.0, "scale": 0.37}, { ...{"x": -800.0, "y": -660.0, "scale": 1.0}, duration: 1.2, ease: "power3.inOut" }, 0.45);
+tl.fromTo("#s2-ring-stock", { opacity: 0, scale: 1.25 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2)" }, 1.8);
+tl.set("#s2-img-b", { opacity: 1 }, 3.65);
+tl.to("#s2-ring-stock", { opacity: 0, duration: 0.2 }, 4.35);
+tl.to("#s2-cam", { ...{"x": -280.0, "y": -950.0, "scale": 1.0}, duration: 0.6, ease: "power3.inOut" }, 4.2);
+tl.fromTo("#s2-ring-save", { opacity: 0, scale: 1.25 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2)" }, 4.85);
+tl.to("#s2-ring-save", { scale: 1.08, duration: 0.12, ease: "power2.out", yoyo: true, repeat: 1 }, 5.199999999999999);
+
+    tl.to("#s2-win", { x: -120, opacity: 0, duration: 0.22, ease: "power2.in" }, 5.180000000000001);
+tl.to("#s2-hl", { opacity: 0, duration: 0.18, ease: "power2.in" }, 5.2);
+    window.__timelines["s2"] = tl;
+  </script>
+</template>

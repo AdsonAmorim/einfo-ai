@@ -1,0 +1,16 @@
+{
+  "name": "einfo",
+  "private": true,
+  "packageManager": "pnpm@10.29.2",
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter web build",
+    "start": "pnpm --filter web start",
+    "lint": "pnpm --filter web lint",
+    "typecheck": "pnpm -r typecheck",
+    "db:generate": "pnpm --filter @einfo/db generate",
+    "db:push": "pnpm --filter @einfo/db push",
+    "db:seed": "pnpm --filter @einfo/db seed",
+    "setup": "pnpm install && pnpm db:push && pnpm db:seed"
+  }
+}

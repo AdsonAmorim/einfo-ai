@@ -1,0 +1,356 @@
+[
+  {
+    "text": "Seu",
+    "start": 0.07,
+    "end": 0.19,
+    "id": "w0"
+  },
+  {
+    "text": "cliente",
+    "start": 0.19,
+    "end": 0.65,
+    "id": "w1"
+  },
+  {
+    "text": "colocou",
+    "start": 0.65,
+    "end": 1.09,
+    "id": "w2"
+  },
+  {
+    "text": "duas",
+    "start": 1.14,
+    "end": 1.39,
+    "id": "w3"
+  },
+  {
+    "text": "placas",
+    "start": 1.39,
+    "end": 1.79,
+    "id": "w4"
+  },
+  {
+    "text": "de",
+    "start": 1.79,
+    "end": 1.92,
+    "id": "w5"
+  },
+  {
+    "text": "vídeo",
+    "start": 1.92,
+    "end": 2.26,
+    "id": "w6"
+  },
+  {
+    "text": "no",
+    "start": 2.26,
+    "end": 2.39,
+    "id": "w7"
+  },
+  {
+    "text": "carrinho.",
+    "start": 2.39,
+    "end": 3.08,
+    "id": "w8"
+  },
+  {
+    "text": "Só",
+    "start": 3.14,
+    "end": 3.26,
+    "id": "w9"
+  },
+  {
+    "text": "que",
+    "start": 3.26,
+    "end": 3.53,
+    "id": "w10"
+  },
+  {
+    "text": "no",
+    "start": 3.53,
+    "end": 3.63,
+    "id": "w11"
+  },
+  {
+    "text": "estoque",
+    "start": 3.71,
+    "end": 4.34,
+    "id": "w12"
+  },
+  {
+    "text": "sobrou",
+    "start": 4.34,
+    "end": 4.88,
+    "id": "w13"
+  },
+  {
+    "text": "uma.",
+    "start": 4.88,
+    "end": 5.2,
+    "id": "w14"
+  },
+  {
+    "text": "Na",
+    "start": 5.26,
+    "end": 5.36,
+    "id": "w15"
+  },
+  {
+    "text": "Info.tech",
+    "start": 5.36,
+    "end": 6.24,
+    "id": "w16"
+  },
+  {
+    "text": "você",
+    "start": 6.24,
+    "end": 6.56,
+    "id": "w17"
+  },
+  {
+    "text": "ajusta",
+    "start": 6.56,
+    "end": 7.05,
+    "id": "w18"
+  },
+  {
+    "text": "o",
+    "start": 7.05,
+    "end": 7.13,
+    "id": "w19"
+  },
+  {
+    "text": "estoque",
+    "start": 7.13,
+    "end": 7.69,
+    "id": "w20"
+  },
+  {
+    "text": "no",
+    "start": 7.69,
+    "end": 7.85,
+    "id": "w21"
+  },
+  {
+    "text": "painel",
+    "start": 7.85,
+    "end": 8.4,
+    "id": "w22"
+  },
+  {
+    "text": "e",
+    "start": 8.4,
+    "end": 8.44,
+    "id": "w23"
+  },
+  {
+    "text": "o",
+    "start": 8.45,
+    "end": 8.5,
+    "id": "w24"
+  },
+  {
+    "text": "carrinho",
+    "start": 8.5,
+    "end": 8.86,
+    "id": "w25"
+  },
+  {
+    "text": "dele",
+    "start": 8.95,
+    "end": 9.06,
+    "id": "w26"
+  },
+  {
+    "text": "se",
+    "start": 9.16,
+    "end": 9.3,
+    "id": "w27"
+  },
+  {
+    "text": "corrige",
+    "start": 9.3,
+    "end": 9.83,
+    "id": "w28"
+  },
+  {
+    "text": "sozinho",
+    "start": 10.1,
+    "end": 10.56,
+    "id": "w29"
+  },
+  {
+    "text": "antes",
+    "start": 10.56,
+    "end": 10.86,
+    "id": "w30"
+  },
+  {
+    "text": "de",
+    "start": 10.86,
+    "end": 10.98,
+    "id": "w31"
+  },
+  {
+    "text": "fechar",
+    "start": 10.98,
+    "end": 11.3,
+    "id": "w32"
+  },
+  {
+    "text": "a",
+    "start": 11.3,
+    "end": 11.38,
+    "id": "w33"
+  },
+  {
+    "text": "compra.",
+    "start": 11.64,
+    "end": 12.08,
+    "id": "w34"
+  },
+  {
+    "text": "Vitrine",
+    "start": 12.16,
+    "end": 12.63,
+    "id": "w35"
+  },
+  {
+    "text": "com",
+    "start": 12.63,
+    "end": 12.86,
+    "id": "w36"
+  },
+  {
+    "text": "categorias,",
+    "start": 12.94,
+    "end": 13.8,
+    "id": "w37"
+  },
+  {
+    "text": "busca",
+    "start": 13.8,
+    "end": 14.2,
+    "id": "w38"
+  },
+  {
+    "text": "e",
+    "start": 14.2,
+    "end": 14.28,
+    "id": "w39"
+  },
+  {
+    "text": "estoque",
+    "start": 14.28,
+    "end": 14.79,
+    "id": "w40"
+  },
+  {
+    "text": "a",
+    "start": 14.82,
+    "end": 14.83,
+    "id": "w41"
+  },
+  {
+    "text": "vista.",
+    "start": 15.2,
+    "end": 15.36,
+    "id": "w42"
+  },
+  {
+    "text": "Uma",
+    "start": 15.42,
+    "end": 15.55,
+    "id": "w43"
+  },
+  {
+    "text": "loja",
+    "start": 15.55,
+    "end": 15.79,
+    "id": "w44"
+  },
+  {
+    "text": "de",
+    "start": 15.79,
+    "end": 15.91,
+    "id": "w45"
+  },
+  {
+    "text": "hardware",
+    "start": 15.91,
+    "end": 16.41,
+    "id": "w46"
+  },
+  {
+    "text": "que",
+    "start": 16.42,
+    "end": 16.61,
+    "id": "w47"
+  },
+  {
+    "text": "não",
+    "start": 16.61,
+    "end": 16.76,
+    "id": "w48"
+  },
+  {
+    "text": "promete",
+    "start": 16.85,
+    "end": 17.24,
+    "id": "w49"
+  },
+  {
+    "text": "o",
+    "start": 17.24,
+    "end": 17.3,
+    "id": "w50"
+  },
+  {
+    "text": "que",
+    "start": 17.3,
+    "end": 17.49,
+    "id": "w51"
+  },
+  {
+    "text": "não",
+    "start": 17.49,
+    "end": 17.65,
+    "id": "w52"
+  },
+  {
+    "text": "tem.",
+    "start": 17.69,
+    "end": 18.07,
+    "id": "w53"
+  },
+  {
+    "text": "A",
+    "start": 18.2,
+    "end": 18.23,
+    "id": "w54"
+  },
+  {
+    "text": "Info.tech.",
+    "start": 18.23,
+    "end": 19.52,
+    "id": "w55"
+  },
+  {
+    "text": "Chama",
+    "start": 19.64,
+    "end": 19.86,
+    "id": "w56"
+  },
+  {
+    "text": "no",
+    "start": 19.86,
+    "end": 19.98,
+    "id": "w57"
+  },
+  {
+    "text": "Direct.",
+    "start": 19.98,
+    "end": 20.56,
+    "id": "w58"
+  }
+]
